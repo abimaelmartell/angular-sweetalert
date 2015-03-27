@@ -6,7 +6,6 @@ var gulp       = require('gulp')
   , ngAnnotate = require('gulp-ng-annotate')
   ;
 
-
 gulp.task('copy', function() {
     gulp.src('lib/sweetalert.js')
         .pipe(ngAnnotate())
@@ -17,7 +16,9 @@ gulp.task('copy', function() {
 gulp.task('dist', ['copy'], function() {
     gulp.src('lib/sweetalert.js')
         .pipe(ngAnnotate())
-        .pipe(uglify())
+        .pipe(uglify({
+            preserveComments: 'some'
+        }))
         .pipe(rename({
             basename: 'sweetalert.min'
         }))
