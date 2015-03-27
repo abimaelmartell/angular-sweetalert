@@ -1,0 +1,25 @@
+{
+  "name": "angular-sweetalert",
+  "version": "0.0.1",
+  "homepage": "https://github.com/abimaelmartell/angular-sweetalert",
+  "authors": [
+    "Abimael Martell <abimex@gmail.com>"
+  ],
+  "description": "Angular bindings to sweetalert",
+  "main": "lib/sweetalert.js",
+  "moduleType": [
+    "node"
+  ],
+  "keywords": [
+    "angular",
+    "sweetalert",
+    "promises",
+    "templates"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ]
+}
